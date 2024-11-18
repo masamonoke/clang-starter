@@ -44,7 +44,8 @@ Checks: >
   -llvm-header-guard,
   -*implicit-bool-conversion,
   -*static-cast-downcast,
-  -readability-misleading-indentation
+  -readability-misleading-indentation,
+  -modernize-use-nodiscard
 
 CheckOptions:
   - key: readability-identifier-naming.ClassCase
