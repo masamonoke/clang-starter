@@ -8,10 +8,9 @@ AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Attach
 
-# IndentAccessModifiers: false
-AccessModifierOffset: -4
+IndentAccessModifiers: true
 IndentWidth: 4
 TabWidth: 4
 UseTab: ForIndentation
@@ -30,7 +29,7 @@ Cpp11BracedListStyle: false
 AlignConsecutiveAssignments: Consecutive
 AlignConsecutiveDeclarations: true
 
-PointerAlignment: Right
+PointerAlignment: Left
 
 AlwaysBreakTemplateDeclarations: Yes
 
@@ -41,3 +40,4 @@ PackConstructorInitializers: CurrentLine
 SortIncludes: false
 
 NamespaceIndentation: All
+

@@ -10,7 +10,7 @@ Checks: >
   cert*,
   misc-include-cleaner-*,
   readability-identifier-naming,
-  readability-named-parameter,
+  -misc-non-private-member-variables-in-classes,
   -google-readability-namespace-comments,
   -google-runtime-int,
   -google-runtime-references,
@@ -19,35 +19,40 @@ Checks: >
   -altera*,
   -llvm-namespace-comment,
   -hicpp-uppercase-literal-suffix,
+  -readability-uppercase-literal-suffix,
   -llvm-include-order,
   -modernize-use-trailing-return-type,
   -google-readability-todo,
   -bugprone-easily-swappable-parameters,
+  -readability-identifier-length,
   -google-explicit-constructor,
+  -hicpp-explicit-conversions,
   -hicpp-special-member-functions,
-  -hicpp-signed-bitwise,
-  -misc-non-private-member-variables-in-classes,
-  -cert-err58-cpp,
-  -hicpp-no-array-decay,
-  -misc-include-cleaner,
-  -llvm-header-guard,
-  -readability-misleading-indentation,
+  -google-default-arguments,
   -modernize-use-nodiscard,
-  -misc-no-recursion,
-  -cppcoreguidelines-init-variables,
-  -boost-use-ranges,
-  -cppcoreguidelines-owning-memory,
-  -readability-identifier-length
+  -hicpp-vararg
+
+WarningsAsErrors: true
 
 CheckOptions:
   - key: readability-identifier-naming.ClassCase
-    value: CamelCase
+    value: lower_case
 
   - key: readability-identifier-naming.StructCase
     value: lower_case
 
+  - key: readability-identifier-naming.MethodCase
+    value: lower_case
+
   - key: readability-identifier-naming.EnumCase
-    value: CamelCase
+    value: lower_case
 
   - key: readability-identifier-naming.EnumConstantCase
-    value: CamelCase
+    value: UPPER_CASE
+
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+
+  - key: readability-identifier-naming.StructMemberCase
+    value: lower_case
+
